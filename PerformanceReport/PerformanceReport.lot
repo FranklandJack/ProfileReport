@@ -1,0 +1,6 @@
+\select@language {english}
+\contentsline {table}{\numberline {1}{\ignorespaces Run times for the sample $1000\times 1000$ grid running on the cp-lab.\relax }}{3}{table.caption.5}
+\contentsline {table}{\numberline {2}{\ignorespaces Run times for the sample $1000\times 1000$ grid running on mid 2014 Macbook Pro with 2.8GHz Intel i5 processor with 8 GB 1600 MHz DDR3.\relax }}{4}{table.caption.6}
+\contentsline {table}{\numberline {3}{\ignorespaces Run times for the sample $1000\times 1000$ grid running on Cirrus back end node with 1 cpu.\relax }}{4}{table.caption.7}
+\contentsline {table}{\numberline {4}{\ignorespaces Complete data set for gcc optimisation tests on cp lab.\relax }}{7}{table.caption.10}
+\contentsline {table}{\numberline {5}{\ignorespaces Complete data set for varying number of steps between output of plain .ppm.\relax }}{8}{table.caption.11}

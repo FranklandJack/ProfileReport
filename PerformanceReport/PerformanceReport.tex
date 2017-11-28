@@ -45,6 +45,10 @@
 \usepackage{multirow}
 \usepackage{caption}
 \usepackage{subcaption}
+\usepackage{pgfplots}
+\pgfplotsset{width=10cm,compat=1.9}
+\usepgfplotslibrary{external}
+\tikzexternalize
 
 
 \begin{document}
@@ -116,22 +120,12 @@ This report provides the results and analysis of various performance tests which
 
 \subsection{Effects of Compiler Optimization Flags}
 \label{subsec:opflags}
-In this section we will investigate the performance effects of using different compilers with different optimization flags. To implement these tests we use a single $1000\times1000$ landscape given in \ref{fig:OptLandscape} which consists of two large land masses separated by a river of water. This landscape was chosen since it is large enough and generic enough to provide results that could be scaled for any realistic landscape. The input parameters for all tests in this section were fixed as:
-\begin{itemize}
-	\item Birthrate of prey 0.08
-	\item Predation rate at which predators eat prey 0.04
-	\item Birth rate of predators per one prey eaten 0.02
-	\item Predator mortality rate 0.06
-	\item Diffusion rate of prey 0.2
-	\item Diffusion rate of predators 0.2
-	\item Size of time step 0.4
-	\item Number of time steps between output of plain .pnm file 10
-\end{itemize}
+In this section we will investigate the performance effects of using different compilers with different optimization flags. To implement these tests we use a single $1000\times1000$ landscape given in figure \ref{fig:OptLandscape} which consists of two large land masses separated by a river of water. This landscape was chosen since it is large enough and generic enough to provide results that could be scaled for any realistic landscape. The input parameters for all tests in this section were fixed as the values given in appendix \ref{ap:inputparameters}.
 \begin{figure}
-\label{fig:OptLandscape}
 \centering
 \frame{\includegraphics[scale=0.2]{OpTestLandscape.png}}
 \caption{ $1000\times1000$ Test Landscape for optimization flags.}
+\label{fig:optlandscape}
 \end{figure}
 
 In order to get an accurate figure on the run time of the code under each compilation flag we initially planned to run the tests on the a single core on a Cirrus back end node. Because the traffic to Cirrus is fairly consistent, due to the fact is in constant use, this allows us to make performance measurements we know are reconstructible, and hence we can compare the run times with a good degree of confidence in their relative values. However, after some initial testing it was clear the code ran roughly 4-5 times faster on the cp-lab than it did on Cirrus. Further to this, we found that submitting several jobs to the Cirrus queue had the effect of slowing each job down by an amount proportional to the number of jobs submitted. The reason for this is not entirely clear; one possibility is that the different jobs were competing for memory on the front end node during output. This issue in particular made testing on Cirrus infeasible, since the run times were over ten minutes, and the jobs needed to be submitted one at a time, the total runtime would have been too large to get any results. Instead we decided to use the cp-lab, since the run times were faster we were able to submit jobs individually and since the cp-lab is in use most of the time we can assume our results accurately represent a standard job runtime. We ran 6 tests for each compiler flag and calculated the mean and standard error using equations \ref{eqn:std} and \ref{eqn:stderr}.
@@ -139,7 +133,6 @@ In order to get an accurate figure on the run time of the code under each compil
 
 
 \begin{table}[!h]
-\label{table:optimizationCPlab}
 \begin{center}
 \begin{adjustbox}{width=\textwidth,totalheight=\textheight,keepaspectratio}
 \begin{tabular}{| c | c | c | c | c | c | c |}
@@ -154,6 +147,7 @@ gcc & $249.002 \pm 0.765$ & $181.647 \pm 0.571$ & $172.332 \pm 0.912$ & $174.978
 \end{adjustbox}
 \end{center}
 \caption{Run times for the sample $1000\times1000$ grid running on the cp-lab.}
+\label{table:optimizationcplab}
 \end{table}
 
 From these results it is clear that under the gcc compiler the code runs fastest when compiled under the $\mathcal{O}2$ flag. This is slightly unexpected since one would expect the code to run fastest when compiled under the $\mathcal{O}3$ or $\mathcal{O}fast$ flags, however it is fairly common for different programs to run faster under different compiler flags due to the different optimisations the various compiler flags employ, and the content of the code itself.\\
@@ -162,7 +156,6 @@ From these results it is clear that under the gcc compiler the code runs fastest
 We were interested in how well the program would perform under a completely different compiler, which is one of the reason we initially chose to use Cirrus. However, due to the fact the the cp-lab only has the gnu gcc compiler installed this meant using a different machine to compile the code. We chose to carry out these extra experiments on a Cirrus back end node and a Macbook to see how they would compare. Due to the long runtime for each test we were only able to carry out one test in each case and have not performed any statistical averages. 
 
 \begin{table}[!h]
-\label{table:optimizationMyComp}
 \begin{center}
 \begin{adjustbox}{width=\textwidth,totalheight=\textheight,keepaspectratio}
 \begin{tabular}{| c | c | c | c | c | c | c |}
@@ -177,10 +170,10 @@ intel & 552.608 & 378.542 & 373.768 & 361.429 & 687.909 & 395.915 \\ \hline
 \end{adjustbox}
 \end{center}
 \caption{Run times for the sample $1000\times1000$ grid running on mid 2014 Macbook Pro with 2.8GHz Intel i5 processor with 8 GB 1600 MHz DDR3.}
+\label{table:optimizationmycomp}
 \end{table}
 
 \begin{table}[!h]
-\label{table:optimizationCirrus}
 \begin{center}
 \begin{adjustbox}{width=\textwidth,totalheight=\textheight,keepaspectratio}
 \begin{tabular}{| c | c | c | c | c | c | c |}
@@ -190,11 +183,12 @@ intel & 552.608 & 378.542 & 373.768 & 361.429 & 687.909 & 395.915 \\ \hline
 & \textbf{O0} & \textbf{O1} & \textbf{O2} & \textbf{O3} & \textbf{Ofast} & \textbf{Os} \\
 \hline
 gcc & 800.220 & 723.293 & 724.042 & 698.490	 & 698.005 & 734.928 \\ \hline
-intel & 871.976 & 751.004 & 728.728  &  &  & \\ \hline
+intel & 871.976 & 751.004 & 728.728  & 718.015  & 723.325  & 731.965 \\ \hline
 \end{tabular}
 \end{adjustbox}
 \end{center}
 \caption{Run times for the sample $1000\times1000$ grid running on Cirrus back end node with 1 cpu.}
+\label{table:optimizationcirrus}
 \end{table}
 
 
@@ -208,22 +202,22 @@ intel & 871.976 & 751.004 & 728.728  &  &  & \\ \hline
 In order to identify the main sources of overhead in our program we used the Gnu gprof tool. The code was compiled under the gcc compiler with optimisation flags -O0 and without the debug flag -g. This is because compiling with optimizations turned on can lead to inlining of functions, which in turn causes them to disappear from the profiling tables, however since different compilers and different flags may inline different functions in different places, the profiling data would be specific to the compiler case, and not a general profile of the code. By compiling with -O0 we can identify overheads that will be common to all compilers for the -O0 (no optimizations) optimization level. The input parameters and landscape are the same as in section \ref{subsec:opflags}. Since they are extensive and rather verbose we have included the first pages only since they contain the functions with the largest overheads.
 
 \begin{figure}
-\label{fig:FlatP}
 \centering
 \frame{\includegraphics[scale=0.3]{Flat-Profile.png}}
 \caption{Flat profile page 1. for Gnu gprof profiler.}
+\label{fig:flatp}
 \end{figure}
 
 \begin{figure}
-\label{fig:CallG}
 \centering
 \frame{\includegraphics[scale=0.3]{Call-Graph-1.png}}
 \caption{Call graph page 1. for Gnu gprof profiler.}
+\label{fig:callg}
 \end{figure}
 
-The \textit{flat profile} shows the total amount of time the program spent executing each function. From \ref{fig:FlatP} we can see the program spent the most time executing the operator(). This is to be expected since the operator() function is used as a utility for accessing the landscape cells in the form (i,j). Due to the fact that internally the landscape is implemented as a 1-D array this function was introduced to make working with the landscape simple and intuitive, and any time access to the landscape is required in the program, the operator() will have been used. One way to reduce the number of function calls to operator() would be to access the elements of the landscape directly in the code using the operator[] on the array of cells. This would make the code for the various Grid methods significantly harder to write and read since all instances of operator(i,j) would become operator[[i + (rows + 1 - j) * (columns+2)]]. An alternative would be to implement the landscape as a 2D array, then the access would be implemented via operator[i][j], however it is likely the overhead of dynamically allocating a 2D array of a user defined type would outweigh the cost of the function we currently have. \\
+The \textit{flat profile} shows the total amount of time the program spent executing each function. From figure \ref{fig:flatp} we can see the program spent the most time executing the operator(). This is to be expected since the operator() function is used as a utility for accessing the landscape cells in the form (i,j). Due to the fact that internally the landscape is implemented as a 1-D array this function was introduced to make working with the landscape simple and intuitive, and any time access to the landscape is required in the program, the operator() will have been used. One way to reduce the number of function calls to operator() would be to access the elements of the landscape directly in the code using the operator[] on the array of cells. This would make the code for the various Grid methods significantly harder to write and read since all instances of operator(i,j) would become operator[[i + (rows + 1 - j) * (columns+2)]]. An alternative would be to implement the landscape as a 2D array, then the access would be implemented via operator[i][j], however it is likely the overhead of dynamically allocating a 2D array of a user defined type would outweigh the cost of the function we currently have. \\
 
-The \textit{call graph} shows how much time was spent in each function and its children. Form this information we are able to identify functions that themselves do not use much time, but call other functions that use exceptional amounts of time. From \ref{fig:CallG} line [2] we can see that 92\% of the time was spent in the function updateGrid() and its subroutines, which is to be expected since this is the function that evolves the landscape and apart from printing output, most the remaining functions called from the main method perform one off tasks such as setting up initial conditions. Of the function calls from within updateGrid() we can see that operator() clocks in the highest with 56.57s spent within it when it is called from updateGrid(). This supports our above analysis that the function operator() is a serious overhead. From [3] and [5] (not shown in \ref{fig:CallG}) we can see that 39.5\% of the total time is spent in operator() or its constant equivalent. We can also see that it is the methods of the Grid class and the updateGrid() functions that call the operator(). Based on this analysis it would be a good idea to test giving these functions direct access to the grid cells through the operator[] instead of using the overloaded operator(). It may be that moving the functionality from operator() to operator[] means that the functions that call it inherit the overhead instead, however it is worth checking as a possible optimization. 
+The \textit{call graph} shows how much time was spent in each function and its children. Form this information we are able to identify functions that themselves do not use much time, but call other functions that use exceptional amounts of time. From figure \ref{fig:callg} line [2] we can see that 92\% of the time was spent in the function updateGrid() and its subroutines, which is to be expected since this is the function that evolves the landscape and apart from printing output, most the remaining functions called from the main method perform one off tasks such as setting up initial conditions. Of the function calls from within updateGrid() we can see that operator() clocks in the highest with 56.57s spent within it when it is called from updateGrid(). This supports our above analysis that the function operator() is a serious overhead. From [3] and [5] (not shown in figure \ref{fig:callg}) we can see that 39.5\% of the total time is spent in operator() or its constant equivalent. We can also see that it is the methods of the Grid class and the updateGrid() functions that call the operator(). Based on this analysis it would be a good idea to test giving these functions direct access to the grid cells through the operator[] instead of using the overloaded operator(). It may be that moving the functionality from operator() to operator[] means that the functions that call it inherit the overhead instead, however it is worth checking as a possible optimization. 
 
 
 
@@ -231,14 +225,92 @@ The \textit{call graph} shows how much time was spent in each function and its c
 \subsection{Effects of Input/Output}
 \label{subsec:input}
 
-\subsection{subsec:outfreq}
-To begin the investigation into the effects of input we vary the number of time steps between the output of the plain .ppm files. The other input parameters are kept fixed at the same values as in section \ref{subsec:opflags}, however the number of steps between the output of the plain .ppm files is varied from 10 to 100 at intervals of 10 steps. The input landscape \ref{fig:OptLandscape} was used for the same reasons as in \ref{subsec:opflags}. Since the program was shown to run fastest when compiled under the -O2 flag in section \ref{subsec:opflags} we have used that option. 
+\subsection{Output Frequency}
+\label{subsec:outfreq}
+To begin the investigation into the effects of input we vary the number of time steps between the output of the plain .ppm files. The other input parameters are kept fixed at the same values as in section \ref{subsec:opflags}, however the number of steps between the output of the plain .ppm files is varied from 10 to 100 at intervals of 10 steps. The input landscape in figure \ref{fig:optlandscape} was used for the same reasons as in section \ref{subsec:opflags}. Since the program was shown to run fastest when compiled under the -O2 flag in section \ref{subsec:opflags} we have used that option here. 
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+	xlabel= Number of time steps between output of plain .ppm file,
+	ylabel= Run time (s),
+    enlargelimits=true,
+]
+\addplot[color=red,mark=o,]
+plot [error bars/.cd, y dir = both, y explicit]
+table[x index=0, y index=1, y error index=2]{outputfrequencyforplot.txt};
+
+\end{axis}
+\end{tikzpicture}
+\caption{Output frequency of plain .ppm vs run time (s)}
+\label{fig:outfreqgraph}
+\end{figure}
+
+The error bars on the figure \ref{fig:outfreqgraph} have been included, however they are very small and hence difficult to see. As in section \ref{subsec:opflags} we took six measurements for each output frequency and calculated the error using equations \ref{eqn:std} and \ref{eqn:stderr}. It is clear from figure \ref{fig:outfreqgraph} that the runtime increases dramatically for higher frequencies, where as for lower frequencies the runtime increase is a lot slower. This relationship is perhaps made clearer in figure \ref{fig:outnumbgraph} where we have plotted the same run times against the total number of output files. The plot is clearly linear, which is what we would expect; the total runtime should be directly proportional to the number of files it outputs. The total number of output files can be calculated by dividing the total number of time steps by the frequency and then flooring the number.
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+	xlabel= Total number plain .ppm output files,
+	ylabel= Run time (s),
+    enlargelimits=true,
+]
+\addplot[color=red,mark=o,]
+plot [error bars/.cd, y dir = both, y explicit]
+table[x index=0, y index=1, y error index=2]{outputnumberforplot.txt};
+
+\end{axis}
+\end{tikzpicture}
+\caption{Number of output plain .ppm vs run time (s)}
+\label{fig:outnumbgraph}
+\end{figure}
 
 \subsubsection{Landscape Water vs. Land}
 \label{subsub:watervsland}
 
 \subsubsection{Landscape Size}
 \label{subsub:landscapesize}
+To investigate the effects of varying landscape size for our program we scaled the square landscape of figure \ref{fig:optlandscape} using Gimp by increasing the width and height be equal amounts and recorded the time take to run in each case. From section \ref{subsec:outfreq} we know that the runtime scales linearly with the number of output files produced. Thus in order to run quicker tests for the landscape size we ran with a low output frequency of 100 and assumed that for any other output frequency the result would scale linearly. As above we recorded six measurements at each landscape size and calculated standard error using equations \ref{eqn:std} and \ref{eqn:stderr}. The results plotted in \ref{fig:landscapesizegraph} suggest a quadratic relationship between the size of the landscape and the run time, that is, $\text{run time} = a (\text{landscape size}) ^k$. This is to be expected, since the total area increases as the square of its sides for a square landscape, and we expect the run time to be proportional to the total area i.e. the number of squares in the landscape. Indeed, by taking the $log$ of the data and plotting it in figure \ref{fig:loglandscapesizegraph} we can approximate the parameters $a$ and $k$ above by measuring the y-intercept and the gradient respectively. We can read off figure \ref{fig:loglandscapesizegraph}  $a \approx 1$ and $k \approx 2$, so we get the relationship $\text{run time} = (\text{landscape size}) ^2$, exactly as expected.
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+	xlabel= Landscape size (square unit),
+	ylabel= Run time (s),
+    enlargelimits=true,
+]
+\addplot[color=red,mark=o,]
+plot [error bars/.cd, y dir = both, y explicit]
+table[x index=0, y index=1, y error index=2]{landscapesizeforplot.txt};
+
+
+
+\end{axis}
+\end{tikzpicture}
+\caption{Size of square landscape vs run time (s)}
+\label{fig:landscapesizegraph}
+\end{figure}
+
+\begin{figure}[!h]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+	xlabel= log(Landscape size),
+	ylabel= log(Run time),
+    enlargelimits=true,
+]
+\addplot[color=red,mark=o,]
+plot [error bars/.cd, y dir = both, y explicit]
+table[x index=0, y index=1, y error index=2]{loglandscapesizeforplot.txt};
+
+
+
+\end{axis}
+\end{tikzpicture}
+\caption{Log plot of size of square landscape vs run time (s)}
+\label{fig:loglandscapesizegraph}
+\end{figure}
 
 \section{Conclusion}
 \label{sec:conclusion}
@@ -251,7 +323,7 @@ To begin the investigation into the effects of input we vary the number of time 
 % \usepackage{multirow}
 \begin{table}[!h]
 \centering
-\label{tab:completeOP}
+\label{tab:completeop}
 \begin{tabular}{| c | c | c | c | c | c | c |}
 \hline
 {\textbf{Compiler} & \multicolumn{6}{| c |}{\textbf{Run Time(s)}}                  \\
@@ -302,6 +374,37 @@ To begin the investigation into the effects of input we vary the number of time 
 \caption{Complete data set for varying number of steps between output of plain .ppm.}
 \end{table}
 
+\begin{table}[!h]
+\centering
+\label{tab:otsdata}
+\begin{tabular}{| c | c | c | c | c | c | c |}
+\hline
+{\textbf{Landscape Size} & \multicolumn{6}{| c |}{\textbf{Run Time(s)}}                  \\
+\hline
+$200\times200$    & 3.372 & 3.409 & 3.711  & 3.366 & 3.3379 & 3.373 \\
+\hline
+$400\times400$   & 14.431 & 13.768 & 14.803  & 14.029 & 13.848 & 13.881 \\
+\hline
+$600\times600$ & 33.229 & 32.582 & 31.024   & 31.608 & 32.466 & 31.779 \\
+\hline
+$800\times800$    & 55.585 & 56.726 & 55.295 & 55.303 & 54.997 & 55.709 \\
+\hline
+$1000\times1000$    & 84.151 & 84.138 & 84.095  & 84.392 & 84.051 & 84.146 \\
+\hline
+$1200\times1200$    & 126.580 & 131.212  & 125.095   & 127.586  & 124.953  & 128.426\\
+\hline
+$1400\times1400$    & 182.386 & 177.712  & 174.942   & 176.624  & 170.565  & 170.154\\
+\hline
+$1600\times1600$    & 222.399 & 220.579  & 221.788   & 222.024  & 222.322  & 226.443\\
+\hline
+$1800\times1800$    & 290.897  & 291.087  & 291.301   & 291.407  & 294.728  & 296.894\\
+\hline
+$2000\times2000$    & 359.388  & 360.973  & 360.214   & 367.307  & 356.216  & 344.524\\
+\hline
+\end{tabular}
+\caption{Complete data set for varying landscape size.}
+\end{table}
+
 
 \section{Statistical Equations and Calculations}
 Our data sets were small due to the fact jobs had to be submitted individually to stop them slowing each other down. Because of this, we choose to use the \textbf{corrected sample standard deviation} given by:\tabularnewline
@@ -314,6 +417,20 @@ which compensates for the bias in standard deviation which occurs for a small da
 \label{eqn:stderr}
 \sigma_x\approx\frac{s}{\sqrt{N}}
 \end{equation}
+
+\section{Input Parameters}
+\label{ap:inputparameters}
+\begin{itemize}
+	\item Birthrate of prey 0.08
+	\item Predation rate at which predators eat prey 0.04
+	\item Birth rate of predators per one prey eaten 0.02
+	\item Predator mortality rate 0.06
+	\item Diffusion rate of prey 0.2
+	\item Diffusion rate of predators 0.2
+	\item Size of time step 0.4
+	\item Number of time steps between output of plain .pnm file 10
+\end{itemize}
+
 
 
 \end{appendices}

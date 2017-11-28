@@ -13,3 +13,4 @@ CIRUS gcc
 698.005
 
 Cirrus Intel
+723.325

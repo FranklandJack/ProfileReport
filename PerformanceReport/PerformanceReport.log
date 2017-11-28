@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500) (preloaded format=pdflatex 2017.11.16)  27 NOV 2017 21:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500) (preloaded format=pdflatex 2017.11.16)  28 NOV 2017 21:53
 entering extended mode
 **./PerformanceReport.tex
 (PerformanceReport.tex
@@ -702,40 +702,180 @@ Package: subcaption 2016/05/22 v1.1-161 Sub-captions (AR)
 \c@subfigure=\count151
 \c@subtable=\count152
 )
-(PerformanceReport.aux)
+(/usr/local/share/miktex-texmf/tex/latex/pgfplots/pgfplots.sty
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplots.revision.tex)
+Package: pgfplots 2017/06/05 v1.15 Data Visualization (1.15)
+
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplots.code.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplotscore.code.tex
+\t@pgfplots@toka=\toks42
+\t@pgfplots@tokb=\toks43
+\t@pgfplots@tokc=\toks44
+\pgfplots@tmpa=\dimen196
+\c@pgfplots@coordindex=\count153
+\c@pgfplots@scanlineindex=\count154
+
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/sys/pgfplotssysgeneric.code
+.tex))
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/libs/pgfplotslibrary.code.t
+ex)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_loader.code.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/pgflibraryfpu.code.tex
+)
+Package pgfplots: loading complementary arithmetics for your pgf version...
+
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgflibraryfpu.code.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count155
+))
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/util/pgfplotsutil.code.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/liststructure/pgfplotslists
+tructure.code.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/liststructure/pgfplotslists
+tructureext.code.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/liststructure/pgfplotsarray
+.code.tex
+\c@pgfplotsarray@tmp=\count156
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/liststructure/pgfplotsmatri
+x.code.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/numtable/pgfplotstableshare
+d.code.tex
+\c@pgfplotstable@counta=\count157
+\t@pgfplotstable@a=\toks45
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/liststructure/pgfplotsdeque
+.code.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/util/pgfplotsbinary.code.te
+x
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/util/pgfplotsbinary.data.co
+de.tex))
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/util/pgfplotsutil.verb.code
+.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/libs/pgflibrarypgfplots.sur
+fshading.code.tex
+\c@pgfplotslibrarysurf@no=\count158
+
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/sys/pgflibrarypgfplots.surf
+shading.pgfsys-pdftex.def)))
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/util/pgfplotscolormap.code.
+tex
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/util/pgfplotscolor.code.tex
+))
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplotsstackedplots.code.t
+ex)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplotsplothandlers.code.t
+ex
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplotsmeshplothandler.cod
+e.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplotsmeshplotimage.code.
+tex)))
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplots.scaling.code.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplotscoordprocessing.cod
+e.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplots.errorbars.code.tex
+) (/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplots.markers.code.tex
+) (/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplotsticks.code.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/pgfplots.paths.code.tex)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.code.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgf/modules/pgfmoduledecorations.cod
+e.tex
+\pgfdecoratedcompleteddistance=\dimen197
+\pgfdecoratedremainingdistance=\dimen198
+\pgfdecoratedinputsegmentcompleteddistance=\dimen199
+\pgfdecoratedinputsegmentremainingdistance=\dimen256
+\pgf@decorate@distancetomove=\dimen257
+\pgf@decorate@repeatstate=\count159
+\pgfdecorationsegmentamplitude=\dimen258
+\pgfdecorationsegmentlength=\dimen259
+)
+\tikz@lib@dec@box=\box43
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathmorphing.code.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathmorphing.code.tex))
+(/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibrarydecorations.pathreplacing.code.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/decorations/pgflibrary
+decorations.pathreplacing.code.tex))
+\pgfplots@numplots=\count160
+\pgfplots@xmin@reg=\dimen260
+\pgfplots@xmax@reg=\dimen261
+\pgfplots@ymin@reg=\dimen262
+\pgfplots@ymax@reg=\dimen263
+\pgfplots@zmin@reg=\dimen264
+\pgfplots@zmax@reg=\dimen265
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2008/01/09 v3.0.1a (rcs-revision 1.1)
+
+(/usr/local/share/miktex-texmf/tex/generic/pgf/libraries/pgflibraryplotmarks.co
+de.tex
+File: pgflibraryplotmarks.code.tex 2015/08/03 v3.0.1a (rcs-revision 1.14)
+)))
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/libs/tikzlibrarypgfplots.ex
+ternal.code.tex
+(/usr/local/share/miktex-texmf/tex/latex/pgf/frontendlayer/libraries/tikzlibrar
+yexternal.code.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgf/frontendlayer/tikz/libraries/tik
+zexternalshared.code.tex))
+Package pgfplots external lib: loading complementary code for your PGF version.
+..
+
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_pgfcoreexternal.code.tex
+File: pgfcoreexternal.code.tex 2015/08/29  (rcs-revision 1.22)
+\pgfexternal@startupbox=\box44
+)
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_tikzlibraryexternal.code.tex
+(/usr/local/share/miktex-texmf/tex/generic/pgfplots/oldpgfcompatib/pgfplotsoldp
+gfsupp_tikzexternalshared.code.tex)))
+\openout3 = `PerformanceReport.auxlock'.
+
+ (PerformanceReport.aux
+
+LaTeX Warning: Label `tab:otsdata' multiply defined.
+
+)
 \openout1 = `PerformanceReport.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 50.
-LaTeX Font Info:    ... okay on input line 50.
-
-(/usr/local/share/miktex-texmf/tex/latex/ucs/ucsencs.def
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 54.
+LaTeX Font Info:    ... okay on input line 54.
+ (/usr/local/share/miktex-texmf/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/local/share/miktex-texmf/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count153
-\scratchdimen=\dimen196
-\scratchbox=\box43
-\nofMPsegments=\count154
-\nofMParguments=\count155
-\everyMPshowfont=\toks42
-\MPscratchCnt=\count156
-\MPscratchDim=\dimen197
-\MPnumerator=\count157
-\makeMPintoPDFobject=\count158
-\everyMPtoPDFconversion=\toks43
+\scratchcounter=\count161
+\scratchdimen=\dimen266
+\scratchbox=\box45
+\nofMPsegments=\count162
+\nofMParguments=\count163
+\everyMPshowfont=\toks46
+\MPscratchCnt=\count164
+\MPscratchDim=\dimen267
+\MPnumerator=\count165
+\makeMPintoPDFobject=\count166
+\everyMPtoPDFconversion=\toks47
 ) (/usr/local/share/miktex-texmf/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
 
@@ -750,8 +890,8 @@ G,.JBIG2,.JB2,.eps]
 (grfext)             \AppendGraphicsExtensions on input line 456.
 )
 ABD: EveryShipout initializing macros
-\AtBeginShipoutBox=\box44
-Package hyperref Info: Link coloring OFF on input line 50.
+\AtBeginShipoutBox=\box46
+Package hyperref Info: Link coloring OFF on input line 54.
 
 (/usr/local/share/miktex-texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
@@ -759,34 +899,37 @@ Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 (/usr/local/share/miktex-texmf/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 )
-\c@section@level=\count159
+\c@section@level=\count167
 )
-LaTeX Info: Redefining \ref on input line 50.
-LaTeX Info: Redefining \pageref on input line 50.
-LaTeX Info: Redefining \nameref on input line 50.
+LaTeX Info: Redefining \ref on input line 54.
+LaTeX Info: Redefining \pageref on input line 54.
+LaTeX Info: Redefining \nameref on input line 54.
 
 (PerformanceReport.out) (PerformanceReport.out)
 \@outlinefile=\write4
 \openout4 = `PerformanceReport.out'.
 
-\c@lstlisting=\count160
+\c@lstlisting=\count168
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-<logo.png, id=50, 1020.81375pt x 1027.84pt>
+
+Package pgfplots notification 'compat/show suggested version=true': you might b
+enefit from \pgfplotsset{compat=1.15} (current compat level: 1.9).
+
+<logo.png, id=54, 1020.81375pt x 1027.84pt>
 File: logo.png Graphic file (type png)
 <use logo.png>
-Package pdftex.def Info: logo.png  used on input line 94. on input line 94.
+Package pdftex.def Info: logo.png  used on input line 98. on input line 98.
 Package pdftex.def Info: Requested size: 85.35835pt x 85.3499pt on input line 9
-4.
- [1
+8.
+[1
 
 {/Users/jackfrankland/.miktex/texmfs/data/pdftex/config/pdftex.map} <./logo.png
 >] (PerformanceReport.lof)
 \tf@lof=\write5
 \openout5 = `PerformanceReport.lof'.
 
-
-(PerformanceReport.lot)
+ (PerformanceReport.lot)
 \tf@lot=\write6
 \openout6 = `PerformanceReport.lot'.
 
@@ -794,138 +937,247 @@ Package pdftex.def Info: Requested size: 85.35835pt x 85.3499pt on input line 9
 ier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.11 ...ne {A}Complete Data Sets}{7}{Appendix.1.A}
+l.6 ...Effects of Input/Output}{7}{subsection.2.3}
                                                    [1])
 \tf@toc=\write7
 \openout7 = `PerformanceReport.toc'.
 
 
 
-Package caption Warning: \label without proper reference on input line 131.
-See the caption package documentation for explanation.
-
-
 LaTeX Warning: Reference `fig:OptLandscape' on page 2 undefined on input line 1
-19.
+23.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 121.
-
-(/usr/local/share/miktex-texmf/tex/latex/base/omscmr.fd
-File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 121.
-<OpTestLandscape.png, id=102, 1003.75pt x 1003.75pt>
+<OpTestLandscape.png, id=118, 1003.75pt x 1003.75pt>
 File: OpTestLandscape.png Graphic file (type png)
 <use OpTestLandscape.png>
-Package pdftex.def Info: OpTestLandscape.png  used on input line 133. on input 
-line 133.
+Package pdftex.def Info: OpTestLandscape.png  used on input line 126. on input 
+line 126.
 Package pdftex.def Info: Requested size: 200.74644pt x 200.74644pt on input lin
-e 133.
- [2]
-Underfull \hbox (badness 10000) in paragraph at lines 159--160
+e 126.
+[2]
+Underfull \hbox (badness 10000) in paragraph at lines 153--154
 
  []
 
 [3 <./OpTestLandscape.png (PNG copy)>] [4]
-<Flat-Profile.png, id=121, 1196.47pt x 623.32875pt>
+<Flat-Profile.png, id=137, 1196.47pt x 623.32875pt>
 File: Flat-Profile.png Graphic file (type png)
 <use Flat-Profile.png>
-Package pdftex.def Info: Flat-Profile.png  used on input line 213. on input lin
-e 213.
+Package pdftex.def Info: Flat-Profile.png  used on input line 206. on input lin
+e 206.
 Package pdftex.def Info: Requested size: 358.94377pt x 187.00006pt on input lin
-e 213.
-<Call-Graph-1.png, id=122, 1231.60126pt x 592.2125pt>
+e 206.
+<Call-Graph-1.png, id=138, 1231.60126pt x 592.2125pt>
 File: Call-Graph-1.png Graphic file (type png)
 <use Call-Graph-1.png>
-Package pdftex.def Info: Call-Graph-1.png  used on input line 220. on input lin
-e 220.
+Package pdftex.def Info: Call-Graph-1.png  used on input line 213. on input lin
+e 213.
 Package pdftex.def Info: Requested size: 369.48323pt x 177.66512pt on input lin
-e 220.
+e 213.
 
-
-Package caption Warning: \label without proper reference on input line 211.
-See the caption package documentation for explanation.
-
-
-LaTeX Warning: Reference `fig:FlatP' on page 5 undefined on input line 224.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 224--225
+Underfull \hbox (badness 10000) in paragraph at lines 218--219
 
  []
 
 [5 <./Flat-Profile.png>]
-
-Package caption Warning: \label without proper reference on input line 218.
-See the caption package documentation for explanation.
+\openout3 = `PerformanceReport.auxlock'.
 
 
-LaTeX Warning: Reference `fig:CallG' on page 6 undefined on input line 226.
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -inter
+action=batchmode -jobname "PerformanceReport-figure0" "\def\tikzexternalrealjob
+{PerformanceReport}\input{PerformanceReport}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "PerformanceR
+eport-figure0" "\def\tikzexternalrealjob{PerformanceReport}\input{PerformanceRe
+port}")...disabled (restricted).
+
+\openout3 = `PerformanceReport.auxlock'.
 
 
-Package caption Warning: \label without proper reference on input line 218.
-See the caption package documentation for explanation.
+! Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interact
+ion=batchmode -jobname "PerformanceReport-figure0" "\def\tikzexternalrealjob{Pe
+rformanceReport}\input{PerformanceReport}"' did NOT result in a usable output f
+ile 'PerformanceReport-figure0' (expected one of .pdf:.jpg:.jpeg:.png:). Please
+ verify that you have enabled system calls. For pdflatex, this is 'pdflatex -sh
+ell-escape'. Sometimes it is also named 'write 18' or something like that. Or m
+aybe the command simply failed? Error messages can be found in 'PerformanceRepo
+rt-figure0.log'. If you continue now, I'll try to typeset the picture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.244 \end{tikzpicture}
+                       
+? 
+PGFPlots: reading {outputfrequencyforplot.txt}
+[6 <./Call-Graph-1.png>] [7]
+\openout3 = `PerformanceReport.auxlock'.
 
 
-LaTeX Warning: Reference `fig:CallG' on page 6 undefined on input line 226.
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -inter
+action=batchmode -jobname "PerformanceReport-figure1" "\def\tikzexternalrealjob
+{PerformanceReport}\input{PerformanceReport}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "PerformanceR
+eport-figure1" "\def\tikzexternalrealjob{PerformanceReport}\input{PerformanceRe
+port}")...disabled (restricted).
 
-[6 <./Call-Graph-1.png>]
-
-Package caption Warning: \label without proper reference on input line 131.
-See the caption package documentation for explanation.
+\openout3 = `PerformanceReport.auxlock'.
 
 
-LaTeX Warning: Reference `fig:OptLandscape' on page 7 undefined on input line 2
-35.
+! Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interact
+ion=batchmode -jobname "PerformanceReport-figure1" "\def\tikzexternalrealjob{Pe
+rformanceReport}\input{PerformanceReport}"' did NOT result in a usable output f
+ile 'PerformanceReport-figure1' (expected one of .pdf:.jpg:.jpeg:.png:). Please
+ verify that you have enabled system calls. For pdflatex, this is 'pdflatex -sh
+ell-escape'. Sometimes it is also named 'write 18' or something like that. Or m
+aybe the command simply failed? Error messages can be found in 'PerformanceRepo
+rt-figure1.log'. If you continue now, I'll try to typeset the picture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.264 \end{tikzpicture}
+                       
+? 
+PGFPlots: reading {outputnumberforplot.txt}
+\openout3 = `PerformanceReport.auxlock'.
+
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -inter
+action=batchmode -jobname "PerformanceReport-figure2" "\def\tikzexternalrealjob
+{PerformanceReport}\input{PerformanceReport}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "PerformanceR
+eport-figure2" "\def\tikzexternalrealjob{PerformanceReport}\input{PerformanceRe
+port}")...disabled (restricted).
+
+\openout3 = `PerformanceReport.auxlock'.
+
+
+! Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interact
+ion=batchmode -jobname "PerformanceReport-figure2" "\def\tikzexternalrealjob{Pe
+rformanceReport}\input{PerformanceReport}"' did NOT result in a usable output f
+ile 'PerformanceReport-figure2' (expected one of .pdf:.jpg:.jpeg:.png:). Please
+ verify that you have enabled system calls. For pdflatex, this is 'pdflatex -sh
+ell-escape'. Sometimes it is also named 'write 18' or something like that. Or m
+aybe the command simply failed? Error messages can be found in 'PerformanceRepo
+rt-figure2.log'. If you continue now, I'll try to typeset the picture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.290 \end{tikzpicture}
+                       
+? 
+PGFPlots: reading {landscapesizeforplot.txt}
+[8]
+\openout3 = `PerformanceReport.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -inter
+action=batchmode -jobname "PerformanceReport-figure3" "\def\tikzexternalrealjob
+{PerformanceReport}\input{PerformanceReport}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "PerformanceR
+eport-figure3" "\def\tikzexternalrealjob{PerformanceReport}\input{PerformanceRe
+port}")...disabled (restricted).
+
+\openout3 = `PerformanceReport.auxlock'.
+
+
+! Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interact
+ion=batchmode -jobname "PerformanceReport-figure3" "\def\tikzexternalrealjob{Pe
+rformanceReport}\input{PerformanceReport}"' did NOT result in a usable output f
+ile 'PerformanceReport-figure3' (expected one of .pdf:.jpg:.jpeg:.png:). Please
+ verify that you have enabled system calls. For pdflatex, this is 'pdflatex -sh
+ell-escape'. Sometimes it is also named 'write 18' or something like that. Or m
+aybe the command simply failed? Error messages can be found in 'PerformanceRepo
+rt-figure3.log'. If you continue now, I'll try to typeset the picture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.310 \end{tikzpicture}
+                       
+? 
+PGFPlots: reading {loglandscapesizeforplot.txt}
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.257 {\textbf{Compiler} &
+l.329 {\textbf{Compiler} &
                            \multicolumn{6}{| c |}{\textbf{Run Time(s)}}     ...
 
 ? 
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
 ! Missing } inserted.
 <inserted text> 
                 }
-l.279 {\textbf{Number steps} &
+l.351 {\textbf{Number steps} &
                                \multicolumn{6}{| c |}{\textbf{Run Time(s)}} ...
 
 ? 
 
-Overfull \hbox (10.81981pt too wide) in paragraph at lines 277--294
+Overfull \hbox (10.81981pt too wide) in paragraph at lines 349--374
  [][] 
  []
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7] [8]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 317.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 317.
- (PerformanceReport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 317.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 317.
+! Missing } inserted.
+<inserted text> 
+                }
+l.382 {\textbf{Landscape Size} &
+                                 \multicolumn{6}{| c |}{\textbf{Run Time(s)}...
+
+? 
+
+Overfull \hbox (17.78644pt too wide) in paragraph at lines 380--405
+ [][] 
+ []
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[9] [10]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 424.
+
+ (/usr/local/share/miktex-texmf/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 424.
+ [11] [12]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 442.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 442.
+
+(PerformanceReport.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 442.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 442.
 Package rerunfilecheck Info: File `PerformanceReport.out' has not changed.
-(rerunfilecheck)             Checksum: FDE9C673F8E0960FB1286B1012381E30;742.
+(rerunfilecheck)             Checksum: 1CDC914D7AE9AF7BA9F03ABE64830D93;799.
 
 
 LaTeX Warning: There were undefined references.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 317.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 442.
  ) 
 Here is how much of TeX's memory you used:
- 19972 strings out of 495212
- 366268 string characters out of 3181581
- 446873 words of memory out of 3000000
- 22874 multiletter control sequences out of 15000+200000
+ 30520 strings out of 495212
+ 721301 string characters out of 3181581
+ 962697 words of memory out of 3000000
+ 33237 multiletter control sequences out of 15000+200000
  11680 words of font info for 41 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,10n,92p,1513b,447s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,13n,96p,1544b,2535s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/loca
 l/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/sha
@@ -937,9 +1189,9 @@ ts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type
 c/amsfonts/cm/cmr8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/
 cmti12.pfb>
-Output written on PerformanceReport.pdf (9 pages, 960339 bytes).
+Output written on PerformanceReport.pdf (13 pages, 982892 bytes).
 PDF statistics:
- 196 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 246 PDF objects out of 1000 (max. 8388607)
+ 43 named destinations out of 1000 (max. 500000)
+ 129 words of extra memory for PDF output out of 10000 (max. 10000000)
 

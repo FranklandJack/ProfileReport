@@ -13,3 +13,4 @@ CIRRUS gcc
 734.928
 
 Cirrus Intel
+731.965

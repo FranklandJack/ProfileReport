@@ -2,11 +2,12 @@
 \contentsline {section}{\numberline {1}Introduction}{2}{section.1}
 \contentsline {section}{\numberline {2}Performance Tests and Analysis}{2}{section.2}
 \contentsline {subsection}{\numberline {2.1}Effects of Compiler Optimization Flags}{2}{subsection.2.1}
-\contentsline {subsection}{\numberline {2.2}Main Sources of Overhead}{5}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.2}Main Sources of Overhead}{4}{subsection.2.2}
 \contentsline {subsection}{\numberline {2.3}Effects of Input/Output}{7}{subsection.2.3}
-\contentsline {subsection}{\numberline {2.4}subsec:outfreq}{7}{subsection.2.4}
-\contentsline {subsubsection}{\numberline {2.4.1}Landscape Water vs. Land}{7}{subsubsection.2.4.1}
-\contentsline {subsubsection}{\numberline {2.4.2}Landscape Size}{7}{subsubsection.2.4.2}
-\contentsline {section}{\numberline {3}Conclusion}{7}{section.3}
-\contentsline {section}{\numberline {A}Complete Data Sets}{7}{Appendix.1.A}
-\contentsline {section}{\numberline {B}Statistical Equations and Calculations}{8}{Appendix.1.B}
+\contentsline {subsection}{\numberline {2.4}Output Frequency}{7}{subsection.2.4}
+\contentsline {subsubsection}{\numberline {2.4.1}Landscape Water vs. Land}{8}{subsubsection.2.4.1}
+\contentsline {subsubsection}{\numberline {2.4.2}Landscape Size}{8}{subsubsection.2.4.2}
+\contentsline {section}{\numberline {3}Conclusion}{9}{section.3}
+\contentsline {section}{\numberline {A}Complete Data Sets}{9}{Appendix.1.A}
+\contentsline {section}{\numberline {B}Statistical Equations and Calculations}{9}{Appendix.1.B}
+\contentsline {section}{\numberline {C}Input Parameters}{11}{Appendix.1.C}

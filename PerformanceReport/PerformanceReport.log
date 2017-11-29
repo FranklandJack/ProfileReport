@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500) (preloaded format=pdflatex 2017.11.16)  28 NOV 2017 21:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (MiKTeX 2.9.6500) (preloaded format=pdflatex 2017.11.16)  29 NOV 2017 21:54
 entering extended mode
 **./PerformanceReport.tex
 (PerformanceReport.tex
@@ -937,49 +937,50 @@ Package pdftex.def Info: Requested size: 85.35835pt x 85.3499pt on input line 9
 ier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.6 ...Effects of Input/Output}{7}{subsection.2.3}
+l.3 ...rformance Tests and Analysis}{3}{section.2}
                                                    [1])
 \tf@toc=\write7
 \openout7 = `PerformanceReport.toc'.
 
 
+Underfull \hbox (badness 10000) in paragraph at lines 115--116
 
-LaTeX Warning: Reference `fig:OptLandscape' on page 2 undefined on input line 1
-23.
+ []
 
-<OpTestLandscape.png, id=118, 1003.75pt x 1003.75pt>
+[2]
+<OpTestLandscape.png, id=133, 1003.75pt x 1003.75pt>
 File: OpTestLandscape.png Graphic file (type png)
 <use OpTestLandscape.png>
-Package pdftex.def Info: OpTestLandscape.png  used on input line 126. on input 
-line 126.
+Package pdftex.def Info: OpTestLandscape.png  used on input line 127. on input 
+line 127.
 Package pdftex.def Info: Requested size: 200.74644pt x 200.74644pt on input lin
-e 126.
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 153--154
+e 127.
+ [3]
+Underfull \hbox (badness 10000) in paragraph at lines 152--153
 
  []
 
-[3 <./OpTestLandscape.png (PNG copy)>] [4]
-<Flat-Profile.png, id=137, 1196.47pt x 623.32875pt>
+[4 <./OpTestLandscape.png (PNG copy)>] [5]
+<Flat-Profile.png, id=163, 1196.47pt x 623.32875pt>
 File: Flat-Profile.png Graphic file (type png)
 <use Flat-Profile.png>
-Package pdftex.def Info: Flat-Profile.png  used on input line 206. on input lin
-e 206.
+Package pdftex.def Info: Flat-Profile.png  used on input line 200. on input lin
+e 200.
 Package pdftex.def Info: Requested size: 358.94377pt x 187.00006pt on input lin
-e 206.
-<Call-Graph-1.png, id=138, 1231.60126pt x 592.2125pt>
+e 200.
+<Call-Graph-1.png, id=164, 1231.60126pt x 592.2125pt>
 File: Call-Graph-1.png Graphic file (type png)
 <use Call-Graph-1.png>
-Package pdftex.def Info: Call-Graph-1.png  used on input line 213. on input lin
-e 213.
+Package pdftex.def Info: Call-Graph-1.png  used on input line 207. on input lin
+e 207.
 Package pdftex.def Info: Requested size: 369.48323pt x 177.66512pt on input lin
-e 213.
+e 207.
 
-Underfull \hbox (badness 10000) in paragraph at lines 218--219
+Underfull \hbox (badness 10000) in paragraph at lines 212--213
 
  []
 
-[5 <./Flat-Profile.png>]
+[6 <./Flat-Profile.png>] [7 <./Call-Graph-1.png>]
 \openout3 = `PerformanceReport.auxlock'.
 
 
@@ -1006,13 +1007,11 @@ See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.244 \end{tikzpicture}
+l.235 \end{tikzpicture}
                        
 ? 
 PGFPlots: reading {outputfrequencyforplot.txt}
-[6 <./Call-Graph-1.png>] [7]
 \openout3 = `PerformanceReport.auxlock'.
-
 
 ===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -inter
 action=batchmode -jobname "PerformanceReport-figure1" "\def\tikzexternalrealjob
@@ -1037,11 +1036,40 @@ See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.264 \end{tikzpicture}
+l.255 \end{tikzpicture}
                        
 ? 
 PGFPlots: reading {outputnumberforplot.txt}
+[8] [9]
+<Fill0.png, id=208, 1003.75pt x 1003.75pt>
+File: Fill0.png Graphic file (type png)
+<use Fill0.png>
+Package pdftex.def Info: Fill0.png  used on input line 267. on input line 267.
+Package pdftex.def Info: Requested size: 146.25pt x 146.2369pt on input line 26
+7.
+<Fill100.png, id=209, 1003.75pt x 1003.75pt>
+File: Fill100.png Graphic file (type png)
+<use Fill100.png>
+Package pdftex.def Info: Fill100.png  used on input line 274. on input line 274
+.
+Package pdftex.def Info: Requested size: 146.25pt x 146.2369pt on input line 27
+4.
+<Fill200.png, id=210, 1003.75pt x 1003.75pt>
+File: Fill200.png Graphic file (type png)
+<use Fill200.png>
+Package pdftex.def Info: Fill200.png  used on input line 281. on input line 281
+.
+Package pdftex.def Info: Requested size: 146.25pt x 146.2369pt on input line 28
+1.
+<Fill1000.png, id=211, 1003.75pt x 1003.75pt>
+File: Fill1000.png Graphic file (type png)
+<use Fill1000.png>
+Package pdftex.def Info: Fill1000.png  used on input line 287. on input line 28
+7.
+Package pdftex.def Info: Requested size: 146.25pt x 146.2369pt on input line 28
+7.
 \openout3 = `PerformanceReport.auxlock'.
+
 
 ===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -inter
 action=batchmode -jobname "PerformanceReport-figure2" "\def\tikzexternalrealjob
@@ -1066,13 +1094,15 @@ See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.290 \end{tikzpicture}
+l.311 \end{tikzpicture}
                        
 ? 
-PGFPlots: reading {landscapesizeforplot.txt}
-[8]
-\openout3 = `PerformanceReport.auxlock'.
+PGFPlots: reading {watervslandforgraph.txt}
 
+LaTeX Warning: Reference `ap:parametercalculation' on page 10 undefined on inpu
+t line 320.
+
+\openout3 = `PerformanceReport.auxlock'.
 
 ===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -inter
 action=batchmode -jobname "PerformanceReport-figure3" "\def\tikzexternalrealjob
@@ -1097,87 +1127,118 @@ See the tikz package documentation for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.310 \end{tikzpicture}
+l.333 \end{tikzpicture}
+                       
+? 
+PGFPlots: reading {landscapesizeforplot.txt}
+[10] [11 <./Fill0.png (PNG copy)> <./Fill100.png (PNG copy)> <./Fill200.png (PN
+G copy)> <./Fill1000.png (PNG copy)>]
+\openout3 = `PerformanceReport.auxlock'.
+
+
+===== 'mode=convert with system call': Invoking 'pdflatex -halt-on-error -inter
+action=batchmode -jobname "PerformanceReport-figure4" "\def\tikzexternalrealjob
+{PerformanceReport}\input{PerformanceReport}"' ========
+runsystem(pdflatex -halt-on-error -interaction=batchmode -jobname "PerformanceR
+eport-figure4" "\def\tikzexternalrealjob{PerformanceReport}\input{PerformanceRe
+port}")...disabled (restricted).
+
+\openout3 = `PerformanceReport.auxlock'.
+
+
+! Package tikz Error: Sorry, the system call 'pdflatex -halt-on-error -interact
+ion=batchmode -jobname "PerformanceReport-figure4" "\def\tikzexternalrealjob{Pe
+rformanceReport}\input{PerformanceReport}"' did NOT result in a usable output f
+ile 'PerformanceReport-figure4' (expected one of .pdf:.jpg:.jpeg:.png:). Please
+ verify that you have enabled system calls. For pdflatex, this is 'pdflatex -sh
+ell-escape'. Sometimes it is also named 'write 18' or something like that. Or m
+aybe the command simply failed? Error messages can be found in 'PerformanceRepo
+rt-figure4.log'. If you continue now, I'll try to typeset the picture.
+
+See the tikz package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.350 \end{tikzpicture}
                        
 ? 
 PGFPlots: reading {loglandscapesizeforplot.txt}
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
 ! Missing } inserted.
 <inserted text> 
                 }
-l.329 {\textbf{Compiler} &
-                           \multicolumn{6}{| c |}{\textbf{Run Time(s)}}     ...
-
+l.368 {\textbf{Compiler} &
+                           \multicolumn{6}{| c |}{\textbf{Run Time(s)}}\\
 ? 
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
+[12] [13]
 ! Missing } inserted.
 <inserted text> 
                 }
-l.351 {\textbf{Number steps} &
-                               \multicolumn{6}{| c |}{\textbf{Run Time(s)}} ...
-
+l.387 {\textbf{Number steps} &
+                               \multicolumn{6}{| c |}{\textbf{Run Time(s)}}\\
 ? 
 
-Overfull \hbox (10.81981pt too wide) in paragraph at lines 349--374
+Overfull \hbox (10.81981pt too wide) in paragraph at lines 385--410
  [][] 
  []
 
+! Missing } inserted.
+<inserted text> 
+                }
+l.418 {\textbf{Landscape Size} &
+                                 \multicolumn{6}{| c |}{\textbf{Run Time(s)}}\\
 
-LaTeX Warning: `!h' float specifier changed to `!ht'.
+? 
+
+Overfull \hbox (17.78644pt too wide) in paragraph at lines 416--441
+ [][] 
+ []
 
 ! Missing } inserted.
 <inserted text> 
                 }
-l.382 {\textbf{Landscape Size} &
-                                 \multicolumn{6}{| c |}{\textbf{Run Time(s)}...
-
+l.449 {\textbf{\% Land} &
+                          \multicolumn{6}{| c |}{\textbf{Run Time(s)}}\\
 ? 
-
-Overfull \hbox (17.78644pt too wide) in paragraph at lines 380--405
- [][] 
- []
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[9] [10]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 424.
+[14] [15]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 510.
 
  (/usr/local/share/miktex-texmf/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 424.
- [11] [12]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 442.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 442.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 510.
+ [16]
+[17]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 521.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 521.
+ (PerformanceReport.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 521.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 521.
 
-(PerformanceReport.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 442.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 442.
-Package rerunfilecheck Info: File `PerformanceReport.out' has not changed.
-(rerunfilecheck)             Checksum: 1CDC914D7AE9AF7BA9F03ABE64830D93;799.
 
+Package rerunfilecheck Warning: File `PerformanceReport.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `PerformanceReport.out':
+(rerunfilecheck)             Before: 1CDC914D7AE9AF7BA9F03ABE64830D93;799
+(rerunfilecheck)             After:  A55246476BB33E10C95A452635509C8E;954.
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 442.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 521.
  ) 
 Here is how much of TeX's memory you used:
- 30520 strings out of 495212
- 721301 string characters out of 3181581
- 962697 words of memory out of 3000000
- 33237 multiletter control sequences out of 15000+200000
- 11680 words of font info for 41 fonts, out of 3000000 for 9000
+ 30589 strings out of 495212
+ 722488 string characters out of 3181581
+ 965697 words of memory out of 3000000
+ 33286 multiletter control sequences out of 15000+200000
+ 12689 words of font info for 45 fonts, out of 3000000 for 9000
  14 hyphenation exceptions out of 8191
- 62i,13n,96p,1544b,2535s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 62i,13n,96p,2090b,2535s stack positions out of 5000i,500n,10000p,200000b,50000s
 </usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/loca
 l/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/sha
@@ -1188,10 +1249,11 @@ ts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/share/miktex-texmf/fonts/type
 1/public/amsfonts/cm/cmr12.pfb></usr/local/share/miktex-texmf/fonts/type1/publi
 c/amsfonts/cm/cmr8.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfon
 ts/cm/cmsy10.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/
-cmti12.pfb>
-Output written on PerformanceReport.pdf (13 pages, 982892 bytes).
+cmti12.pfb></usr/local/share/miktex-texmf/fonts/type1/public/amsfonts/cm/cmtt12
+.pfb>
+Output written on PerformanceReport.pdf (18 pages, 1020115 bytes).
 PDF statistics:
- 246 PDF objects out of 1000 (max. 8388607)
- 43 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 315 PDF objects out of 1000 (max. 8388607)
+ 55 named destinations out of 1000 (max. 500000)
+ 149 words of extra memory for PDF output out of 10000 (max. 10000000)
 

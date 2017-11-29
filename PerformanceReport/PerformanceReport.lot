@@ -1,7 +1,8 @@
 \select@language {english}
-\contentsline {table}{\numberline {1}{\ignorespaces Run times for the sample $1000\times 1000$ grid running on the cp-lab.\relax }}{3}{table.caption.5}
-\contentsline {table}{\numberline {2}{\ignorespaces Run times for the sample $1000\times 1000$ grid running on mid 2014 Macbook Pro with 2.8GHz Intel i5 processor with 8 GB 1600 MHz DDR3.\relax }}{4}{table.caption.6}
-\contentsline {table}{\numberline {3}{\ignorespaces Run times for the sample $1000\times 1000$ grid running on Cirrus back end node with 1 cpu.\relax }}{4}{table.caption.7}
-\contentsline {table}{\numberline {4}{\ignorespaces Complete data set for gcc optimisation tests on cp lab.\relax }}{10}{table.caption.14}
-\contentsline {table}{\numberline {5}{\ignorespaces Complete data set for varying number of steps between output of plain .ppm.\relax }}{11}{table.caption.15}
-\contentsline {table}{\numberline {6}{\ignorespaces Complete data set for varying landscape size.\relax }}{11}{table.caption.16}
+\contentsline {table}{\numberline {1}{\ignorespaces Run times for the $1000\times 1000$ landscape in figure \ref {fig:optlandscape} running on the cp-lab.\relax }}{4}{table.caption.5}
+\contentsline {table}{\numberline {2}{\ignorespaces Run times for the $1000\times 1000$ landscape in figure \ref {fig:optlandscape} running on mid 2014 Macbook Pro with 2.8GHz Intel i5 processor with 8 GB 1600 MHz DDR3 memory.\relax }}{5}{table.caption.6}
+\contentsline {table}{\numberline {3}{\ignorespaces Run times for the $1000\times 1000$ landscape in figure \ref {fig:optlandscape} running on Cirrus back end node with 1 cpu.\relax }}{5}{table.caption.7}
+\contentsline {table}{\numberline {4}{\ignorespaces Complete data set for gcc optimisation tests on cp lab.\relax }}{14}{table.caption.16}
+\contentsline {table}{\numberline {5}{\ignorespaces Complete data set for varying number of steps between output of plain .ppm.\relax }}{14}{table.caption.17}
+\contentsline {table}{\numberline {6}{\ignorespaces Complete data set for varying landscape size.\relax }}{15}{table.caption.18}
+\contentsline {table}{\numberline {7}{\ignorespaces Complete data set for varying ratio of land to water.\relax }}{15}{table.caption.19}
